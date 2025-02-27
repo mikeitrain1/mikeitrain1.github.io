@@ -1,49 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <link rel="stylesheet" href="styles.css">
-        <title>Michael Zinabu </title>
+        <title>Michael Zinabu | Developer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
     <body>
-        <header>
-            <a href="#" class="logo">Mickey</a>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-            <nav>
-                <a href="#" class="active"> Home</a>
-                <a href="#" >Services</a>
-                <a href="#" >Skills</a>
-                <a href="#" >Education</a>
-                <a href="#" >Experience</a>
-                <a href="#" >Contact</a>
-            </nav>
-        </header>
-        <section class="home">
-            <div class="home-img">
-                <img src="pixel.jpg" alt="">
-            </div>
-            <div class="home-content">
-                <h1>Welcome I'm <span>Mickey</span></h1>
-                <p>
-                    passionate and versatile developer with experience in Linux systems, 
-                    game development in C++, Java programming, and web development.
-                    I enjoy creating innovative solutions, building engaging applications,
-                    and continuously learning new technologies. Whether it’s designing 
-                    immersive games, developing robust backend systems, or crafting dynamic websites, 
-                    I’m always excited to bring ideas to life through code.
-                </p> 
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <section id="hero">
+                <div class="container">
+                    <h1>Michael Zinabu</h1>
+                    <div class="terminal-typing">
+                        <p class="response">CS Student | Linux Enthusiast | Vim enjoyer</p>
+                    </div>
                 </div>
-                <a href="#" class="btn">Hire me</a>
-            </div>
-        </section>
+            </section>
+
+            <section id="about" class="section">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>Hello! I'm Michael Zinabu, a third-year Computer Science student with a passion for Linux,
+                                low-level systems, and game development. I believe in the power of open-source software
+                                and enjoy customizing my development environment with efficient window managers.</p>
+
+                            <p>My journey in computing began with a fascination for how software interacts with hardware,
+                                which led me to explore Scratch  programming and Linux . When I'm not coding, I'm either 
+                                learning new technology  or  tinkering trying to make something work.</p>
+
+                            <div class="stats">
+                                <div class="stat-item">
+                                    <h4>Location:</h4>
+                                    <p>Ethiopia</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>Current Status:</h4>
+                                    <p>Computer Science Student (Year 3)</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>Editor of Choice:</h4>
+                                    <p>Vim/Neovim</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>OS:</h4>
+                                    <p>Arch Linux + Hyprland</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Languages</h3>
+                            <ul class="skill-list">
+                                <li><span class="skill-name">C++</span><div class="progress-bar"><div class="progress" style="width: 85%"></div></div></li>
+                                <li><span class="skill-name">JavaScript</span><div class="progress-bar"><div class="progress" style="width: 45%"></div></div></li>
+                                <li><span class="skill-name">HTML/CSS</span><div class="progress-bar"><div class="progress" style="width: 95%"></div></div></li>
+                                <li><span class="skill-name">PHP</span><div class="progress-bar"><div class="progress" style="width: 60%"></div></div></li>
+                                <li><span class="skill-name">SQL</span><div class="progress-bar"><div class="progress" style="width: 55%"></div></div></li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Tools & Technologies</h3>
+                            <ul class="skill-list">
+                                <li><span class="skill-name">Git</span><div class="progress-bar"><div class="progress" style="width: 100%"></div></div></li>
+                                <li><span class="skill-name">Vim</span><div class="progress-bar"><div class="progress" style="width: 95%"></div></div></li>
+                                <li><span class="skill-name">Linux</span><div class="progress-bar"><div class="progress" style="width: 90%"></div></div></li>
+                                <li><span class="skill-name">MySQL</span><div class="progress-bar"><div class="progress" style="width: 60%"></div></div></li>
+                                <li><span class="skill-name">Window Managers</span><div class="progress-bar"><div class="progress" style="width: 70%"></div></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Neovim Config with LSP and Autocomplete</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/mikeitrain1/nvim" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <p class="project-description">A fully featured Neovim configuration with LSP integration and intelligent code completion.</p>
+                            <div class="project-tags">
+                                <span class="tag">Lua</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Reproducible Arch Linux System Config</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/mikeitrain1/dotfiles" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <p class="project-description">A complete dotfiles repository for reproducible Arch Linux configurations with custom window manager setup.</p>
+                            <div class="project-tags">
+                                <span class="tag">Linux</span>
+                                <span class="tag">Bash</span>
+                                <span class="tag">Hyprland</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <div class="contact-info">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-detail">
+                                <h4>Email</h4>
+                                <p>michaelzinabu279@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div class="contact-detail">
+                                <h4>GitHub</h4>
+                                <p>https://github.com/mikeitrain1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>© 2025 Michael Zinabu. All rights reserved.</p>
+            </footer>
+        </div>
     </body>
 </html>
-
